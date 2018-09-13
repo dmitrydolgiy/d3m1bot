@@ -13,16 +13,6 @@ const options = {
     reply_markup: JSON.stringify({
         inline_keyboard: [
             [{ text: 'Хуево', callback_data: 'data 1' }],
-            [{ text: 'Хуево', callback_data: 'data 1' }],
-            [{ text: 'Хуево', callback_data: 'data 1' }],
-            [{ text: 'Хуево', callback_data: 'data 1' }],
-            [{ text: 'Хуево', callback_data: 'data 1' }],
-            [{ text: 'Хуево', callback_data: 'data 1' }],
-            [{ text: 'Хуево', callback_data: 'data 1' }],
-            [{ text: 'Хуево', callback_data: 'data 1' }],
-            [{ text: 'Хуево', callback_data: 'data 1' }],
-            [{ text: 'Хуево', callback_data: 'data 1' }],
-            [{ text: 'Хуево', callback_data: 'data 1' }],
             [{ text: 'Очень хуево', callback_data: 'data 2' }],
             [{ text: 'Крайне неутешительно', callback_data: 'data 3' }]
         ]
