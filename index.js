@@ -4,8 +4,6 @@ var _nodeTelegramBotApi = require('node-telegram-bot-api');
 
 var _nodeTelegramBotApi2 = _interopRequireDefault(_nodeTelegramBotApi);
 
-var _config = require('../config/config');
-
 var _axios = require('axios');
 
 var _axios2 = _interopRequireDefault(_axios);
@@ -14,7 +12,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function _toArray(arr) { return Array.isArray(arr) ? arr : Array.from(arr); }
 
-var bot = new _nodeTelegramBotApi2.default(_config.CONFIG.TOKEN, { polling: true });
+var bot = new _nodeTelegramBotApi2.default('632046583:AAEOLvguRBd0sLgvbom4bfQuHqu0G9mHFew', { polling: true });
 
 // bot.setWebHook(`${CONFIG.URL}/bot${CONFIG.TOKEN}`);
 
