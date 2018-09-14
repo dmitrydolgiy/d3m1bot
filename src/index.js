@@ -1,6 +1,5 @@
 import TelegramBot from 'node-telegram-bot-api';
 import { CONFIG } from '../config/config';
-import fs from 'fs';
 import axios from 'axios';
 
 const bot = new TelegramBot(CONFIG.TOKEN, { polling: true });
@@ -19,9 +18,9 @@ const options = {
     }
 };
 
-// bot.on('message', ({ chat: { id } }) => {
-//     bot.sendMessage(id, 'Выбери уже хоть что-нибудь:', options);
-// });
+bot.on('message', ({ chat: { id } }) => {
+    bot.sendMessage(id, 'Выбери уже хоть что-нибудь:', options);
+});
 
 bot.on('message', ({ text, chat: { id } }) => {
     axios.get(`https://www.instagram.com/web/search/topsearch/?context=blended&query=${text}&rank_token=0.7305849633342247&include_reel=false`)
